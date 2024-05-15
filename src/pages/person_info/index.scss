@@ -1,0 +1,60 @@
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 50px 30px 85px 150px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 10px;
+
+  .info-content {
+
+    .info-title {
+      margin-bottom: 50px;
+      font-size: 32px;
+      color: #3A3D40;
+    }
+
+    .ant-form-item {
+      margin-bottom: 20px;
+    }
+
+    .ant-input, .ant-select,.ant-picker {
+      width: 320px;
+      height: 40px;
+    }
+
+    .ant-select-selector {
+      height: 40px;
+      padding-top: 5px;
+    }
+
+
+
+    .btn-container {
+      width: 400px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+
+      .btn {
+        width: 48%;
+        height: 44px;
+        border-radius: 5px;
+      }
+      .gray-btn {
+        background: #F2F4F7;
+        color: #1880FF
+      }
+      .goto_exam{
+        width: 100%;
+      }
+    }
+  }
+  img {
+    width: 529px;
+    height: 545px;
+    align-self: flex-end;
+  }
+}

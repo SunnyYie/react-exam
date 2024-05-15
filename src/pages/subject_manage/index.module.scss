@@ -1,0 +1,23 @@
+.wrap {
+    height: 100%;
+    /* background: pink; */
+}
+
+.my-4 {
+    margin: 16px;
+}
+
+.my-6 {
+    margin: 24px;
+}
+
+.my-8 {
+    margin: 32px;
+}
+
+.tables {
+    
+    :global(.ant-table-row.ant-table-row-level-1) {
+        background-color: rgba(0,0,0,0.03) ;
+    }
+}

@@ -1,0 +1,120 @@
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 56px;
+  .title {
+    font-family: Source Han Sans CN;
+    font-size: 16px;
+    font-weight: bold;
+    color: #3a3d40;
+    margin: 24px 0;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -10px;
+      top: 3px;
+      width: 4px;
+      height: 15px;
+      background: #1880ff;
+    }
+  }
+}
+.content {
+  overflow-y: auto;
+  // height: calc(100vh - 215px);
+  flex: 1;
+  scroll-behavior: smooth;
+  position: relative;
+  .content_item {
+    border-bottom: 1px solid #e8e8e8;
+    font-family: Source Han Sans CN;
+    > div {
+      margin: 10px 0;
+    }
+    .question_title {
+      font-size: 20px;
+      font-weight: 350;
+      color: #3a3d40;
+    }
+    .question_describe {
+      font-size: 14px;
+      font-weight: 350;
+      color: #5f6367;
+    }
+    .question_image {
+      width: 280px;
+      height: 155px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .question_answer {
+      display: flex;
+      .label {
+        font-family: Source Han Sans CN;
+        font-size: 14px;
+        font-weight: bold;
+        color: #5f6367;
+      }
+      .value {
+        font-family: Source Han Sans CN;
+        font-size: 14px;
+        font-weight: 0;
+        color: #5f6367;
+      }
+    }
+    .question_comment {
+      .label {
+        font-family: Source Han Sans CN;
+        font-size: 14px;
+        font-weight: bold;
+        color: #5f6367;
+        display: flex;
+        align-items: center;
+        .success {
+          background: #f2fcf7;
+          box-sizing: border-box;
+          border: 1px solid #3dc77f;
+          color: #3dc77f;
+          font-family: Source Han Sans CN;
+          font-size: 12px;
+          font-weight: 350;
+        }
+        .error {
+          background: #f2fcf7;
+          box-sizing: border-box;
+          border: 1px solid #ff4d4f;
+          color: #ff4d4f;
+          font-family: Source Han Sans CN;
+          font-size: 12px;
+          font-weight: 350;
+        }
+        .state {
+          padding: 3px 8px;
+          border-radius: 2px;
+        }
+      }
+      .value {
+        margin-top: 10px;
+        font-family: Source Han Sans CN;
+        font-size: 14px;
+        font-weight: 0;
+        color: #5f6367;
+      }
+    }
+  }
+}
+
+
+.scroll::-webkit-scrollbar {
+width: 10px;
+}
+.scroll::-webkit-scrollbar-thumb {
+background-color: #9fa3a7;
+border-radius: 10px;
+-webkit-box-shadow: inset1px1px0rgba(0, 0, 0, 0.1);
+}
